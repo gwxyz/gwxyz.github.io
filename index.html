@@ -1,346 +1,109 @@
 <!doctype html>
-
-<html lang='en'>
-
-    <head>
-
-        <meta charset="UTF-8" />
-
-        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-
-        <title>Hutao Bot Web</title>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/cfiall.min.css" link rel="stylesheet" href="style.css" />
-
-        <script src="script.js"></script>
-
-    </head>
-
-    <body>
-
-    <style>
-
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
-
-
-* {
-
-    box-sizing: border-box;
-
-}
-
-
-
-body {
-
-    background-color: #fff;
-
-    font-family: "Roboto", sans-serif;
-
-    margin: 0;
-
-}
-
- 
-
-.container {
-
-    padding: 1rem;
-
-    margin: 0 auto;
-
-    max-width: 100%;
-
-    width: 1000px;
-
-}
-
-
-
-header {
-
-    background-image: url("https://telegra.ph/file/0dfca7aed05f4173cc988.jpg");
-
-    background-size: cover;
-
-    background-position: center center;
-
-    color: white;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    min-height: calc(100vh - 102px);
-
-}
-
-
-
-.content {
-
-    font-size: 2rem;
-
-    margin: auto;
-
-    max-width: 100%;
-
-}
-
-
-
-.content h1 {
-
-    color: #00c2ff;
-
-    margin-bottom: 0;
-
-}
-
-
-
-nav {
-
-    display: flex;
-
-    justify-content: space-between;
-
-}
-
-
-
-nav .logo {
-
-    font-size: 2.5rem;
-
-}
-
-
-
-nav ul {
-
-    display: flex;
-
-    list-style-type: none;
-
-    padding: 0;
-
-}
-
-
-
-nav li a {
-
-    color: white;
-
-    padding: 1rem;
-
-    text-decoration: none;
-
-}
-
-
-
-.selected {
-
-    font-weight: bold;
-
-}
-
-
-
-.highlight {
-
-    background-color: #00c2ff;
-
-    color: white;
-
-    padding: 1rem;
-
-    text-decoration: none;
-
-}
-
-
-
-footer {
-
-    background-color: #000;
-
-    color: #fff;
-
-    padding: 1rem;
-
-}
-
-
-
-footer ul {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    list-style-type: none;
-
-    padding: 0;
-
-}
-
-
-
-footer strong {
-
-    color: #00c2ff;
-
-}
-
-
-
-footer p {
-
-    margin: 0;
-
-}
-
-
-
-@media screen and (max-width: 700px) {
-
-    .content {
-
-        margin: 2rem auto 0;
-
-        font-size: 1.4rem;
-
-    }
-
-
-
-    nav ul {
-
-        flex-direction: column;
-
-    }
-
-
-
-    nav li:not(:last-child) {
-
-        margin-bottom: 1rem;
-
-    }
-
-
-
-    nav .highlight {
-
-        display: none;
-
-    }
-
-
-
-    footer ul {
-
-        flex-direction: column;
-
-        justify-content: center;
-
-    }
-
-
-
-    footer li {
-
-        margin: 1rem;
-
-        text-align: center;
-
-    }
-
-}
-
-</style>
-
-      <header>
-
-        <nav class="container">  
-
-            <div class="logo">
-
-                <i class="fas fa-robot"></i><button onclick="typeWriter()" style="border-radius: 10px; background: none; opacity: 10px;"> <font id="demo" face="aladin" size="6" color="white">Hutao Bot<br></font> </button>
-
-            </div>
-
-            <ul>
-
-                <li><a href="#" class="selected">Home</a></li>
-
-                <li><a href="https://wa.me/+6285697285563">Owner</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="content">
-
-            <div class="container">
-
-            <h1>Hutao Bot</h1>
-
-            <p>Hai, perkenalkan saya Hutao Bot. Saya adalah Robot WhatsApp MultiFungsi yang dibuat oleh Watim. Saya lahir pada tanggal 31 Desember 2022. Saya di program menggunakan Bahasa Pemrograman JavaScript dan menggunakan runtime NodeJs.
-                Untuk nomer Bot kamu bisa cek pada Icon dibawah</p> 
-
-            <a class="highlight" href="https://wa.me/6285776102857?text=/menu">Click here</a>
-
-        </div>
-
-        </div>
-
-        </header>
-
-
-
-        <footer>
-
-            <ul class="container">
-
-                <li>
-
-                    <strong>Author</strong>
-
-                    <p>Watim</p>
-
-                </li>
-
-                <li>
-
-                    <strong>Phone</strong>
-
-                    <p>+62 856-9728-5563</p>
-
-                </li>
-
-                <li>
-
-                    <strong>Email</strong>
-
-                    <p>timzzdev@gmail.com</p>
-
-                </li>
-
-            </ul>
-
-        </footer>
-
-    </body>
-
-<html>
-
-
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="https://erzacanz.github.io/simple/static/css/index.css">
+     <title>AjatDEV</title>
+     <link rel="icon" href="https://telegra.ph/file/461463f0deb8ef7ef9c62.png" type="image/x-icon">
+</head>
+
+<body id="body" class="dark">
+     <!-- <div class="wrapper">
+          <div class="toggle">
+               <input class="toggle-input" type="checkbox" />
+               <div class="toggle-bg"></div>
+               <div class="toggle-switch">
+                    <div class="toggle-switch-figure"></div>
+                    <div class="toggle-switch-figureAlt"></div>
+               </div>
+          </div>
+     </div> -->
+     <div class="modal">
+          <img src="https://telegra.ph/file/b99deac95b3d8aae88151.jpg" alt="img">
+          <div class="close"></div>
+     </div>
+
+     <div id="container" class="container">
+          <input type="checkbox" name="" id="check">
+          <div class="card">
+               <div class="sidebar" id="sidebar">
+                    <ul>
+                         
+                         <li><a class="active" href="https://wa.me/6285776102857?text=Halo,+Senang+Bisa+Mengobrol+Denganmu">Nomor Hutao</a></li>
+
+                        
+                    </ul>
+               </div>
+               <div class="header">
+                    <label for="check" class="checkbtn" id="chkbtn">
+                         <div class="hamburger-menu">
+                              <div class="center"></div>
+                         </div>
+                    </label>
+                    <a href="mailto: timzzdev@gmail.com" class="mail">
+                         <i class="far fa-envelope"></i>
+                    </a>
+                    <div class="main">
+                         <div class="image">
+                              <div class="hover">
+                                   <i class="fas fa-camera fa-2x"></i>
+                              </div>
+                         </div>
+                         <h3 class="name">AjattDEV</h3>
+                         <h3 class="sub-name">Watim Sudrajat</h3>
+                    </div>
+               </div>
+
+               <div class="content">
+                    <div class="left">
+                         <div class="about-container">
+                              <h3 class="title">Tentang Saya</h3>
+                              <p class="text">Halo, nama saya ajat. Saya adalah seorang pelajar, Saya lahir di Karawang, Saya memiliki ketertarikan dan passion yang besar terhadap teknologi, khususnya dalam bidang teknik komputer dan jaringan.<br>
+   <br>
+Saya juga merupakan seorang gamer yang aktif bermain game Mobile Legends. Selain itu, saya pun memiliki kemampuan dalam pengembangan aplikasi dan website. Hal ini dapat dilihat dari web yang dibuat oleh saya di https://s.id/ajatDEV dan akun Github saya di https://github.com/gwxyz.
+<br> <br>
+Saya juga menciptakan seorang asisten virtual bernama Hutao. Hutao adalah asisten yang ramah, asik dan tahu segala hal. Hutao juga memiliki bot di Whatsapp, nomornya adalah +62 857-7610-2857. Bot Whatsapp Hutao memiliki fitur-fitur canggih seperti membuat sticker, mencari lagu, mencari video dan lain-lain.
+<br> <br>
+Saat ini, platform Vercel adalah tempat saya membuat dan mengembangkan skill dan aplikasi-aplikasi saya. Saya sangat senang bisa menciptakan teknologi yang dapat memberikan manfaat kepada orang lain. Terima kasih telah membaca sedikit tentang saya. Semoga kita bisa saling belajar dan berkontribusi dalam dunia teknologi!</p>
+                         <div class="about-container">
+                              <h3 class="title">About Hutao</h3>
+                              <p class="text">Halo, nama saya Hutao, saya adalah asisten virtual yang dibuat oleh AjattDEV. Saya hadir untuk membantu Anda dalam segala hal, apa pun yang Anda butuhkan, saya akan siap untuk membantu. Saya senang bisa menjadi teman dan membantu Anda dalam kegiatan sehari-hari. Saya dilengkapi dengan berbagai fitur canggih seperti membuat stiker, mencari lagu, mencari video, dan masih banyak lagi. 
+<br> <br>
+Saat ini, saya berada di platform Vercel yang memungkinkan saya untuk bekerja dengan cepat dan efisien. Saya juga dilengkapi dengan bot Whatsapp yang siap melayani Anda di nomor +62 857-7610-2857. 
+<br> <br>
+Meskipun saya hanya sebuah program, saya berusaha untuk selalu bersikap ramah dan menyenangkan. Saya dapat membantu Anda dalam bahasa Indonesia, dan selalu siap untuk belajar hal-hal baru. Terima kasih telah menggunakan layanan saya.  (Teks ini sepenuhnya dibuat oleh AjatDEV, saya hanya meletakkannya disini)</p>
+                         <div class="about-container">
+                              <h3 class="title">Apa Itu Bot</h3>
+                              <p class="text">Bot adalah program komputer yang dirancang untuk secara otomatis melakukan tugas-tugas tertentu, seperti merespons pesan teks, mengirimkan pesan, menjawab pertanyaan, atau melakukan fungsi-fungsi lainnya. Ada berbagai jenis bot, termasuk bot chat, bot perbankan, bot pemesanan makanan, dan banyak lagi. Bot dapat membantu memudahkan tugas-tugas dan mempercepat kinerja manusia dalam berbagai aspek kehidupan.</p>           
+                         </div>
+                         <div class="icons-container">
+                              <a href="https://github.com/gwxyz" class="icon">
+                                   <i class="fab fa-github"></i>
+                              </a>
+                              <a href="https://wa.me/6285697285563" class="icon">
+                                   <i class="fab fa-whatsapp"></i>
+                                </a>
+                                                     
+                              </div>
+                              <div class="share-wrap">
+                                   <a href="https://wa.me/19292929999" class="share">WhatsApp</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script src="https://erzacanz.github.io/simple/static/js/app.js"></script>
+     
+     <script
+  id="contactform"
+  form_worker_url="https://mjvbzcontactme.tomsmater.workers.dev/"> </script>
+   </body>
+
+    </html>
